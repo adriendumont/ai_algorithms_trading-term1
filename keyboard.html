@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.min.css" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="modal fade modal_stretch ui-draggable in" role="dialog" style="display: block; left: -438px; top: -12px; padding-left: 0px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header ui-draggable-handle"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Keyboard shortcuts</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="alert alert-info">The Jupyter Notebook with jupyter-vim-binding has two different keyboard input modes.<b>Jupyter mode</b> binds the keyboard to notebook level commands and is indicated by a grey cell border with a blue left margin.<b>Vim command mode</b> allows you to type code/text into a cell and is indicated by a green cell border.</div>
+                        <div class="alert alert-info">
+                            <div>Mac OS X modifier keys:
+                                <div class="container-fluid">
+                                    <div class="col-md-6">
+                                        <div class="quickhelp"><span class="shortcut_key"><kbd>⌘</kbd></span><span class="shortcut_descr"> : Command</span></div>
+                                        <div class="quickhelp"><span class="shortcut_key"><kbd>⌃</kbd></span><span class="shortcut_descr"> : Control</span></div>
+                                        <div class="quickhelp"><span class="shortcut_key"><kbd>⌥</kbd></span><span class="shortcut_descr"> : Option</span></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="quickhelp"><span class="shortcut_key"><kbd>⇧</kbd></span><span class="shortcut_descr"> : Shift</span></div>
+                                        <div class="quickhelp"><span class="shortcut_key"><kbd>↩</kbd></span><span class="shortcut_descr"> : Return</span></div>
+                                        <div class="quickhelp"><span class="shortcut_key"><kbd>␣</kbd></span><span class="shortcut_descr"> : Space</span></div>
+                                        <div class="quickhelp"><span class="shortcut_key"><kbd>⇥</kbd></span><span class="shortcut_descr"> : Tab</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Jupyter Mode (press <kbd>Shift-Esc</kbd> to enable)</h4>
+                            <div class="container-fluid">
+                                <div class="col-md-6">
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>/</kbd></span><span class="shortcut_descr"> : find and replace</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃D</kbd></span><span class="shortcut_descr"> : scroll notebook down</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃E</kbd></span><span class="shortcut_descr"> : scroll down</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃⇧D</kbd></span><span class="shortcut_descr"> : scroll notebook down</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃⇧U</kbd></span><span class="shortcut_descr"> : scroll notebook up</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃U</kbd></span><span class="shortcut_descr"> : scroll notebook up</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃Y</kbd></span><span class="shortcut_descr"> : scroll up</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>G</kbd>,<kbd>G</kbd></span><span class="shortcut_descr"> : select the first cell</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⇧G</kbd></span><span class="shortcut_descr"> : select the last cell</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>Z</kbd>,<kbd>M</kbd></span><span class="shortcut_descr"> : collapse output</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>Z</kbd>,<kbd>R</kbd></span><span class="shortcut_descr"> : expand output</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>Z</kbd>,<kbd>⇧M</kbd></span><span class="shortcut_descr"> : collapse all output</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>Z</kbd>,<kbd>⇧R</kbd></span><span class="shortcut_descr"> : expand all output</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>↩</kbd></span><span class="shortcut_descr"> : enter edit mode</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>I</kbd></span><span class="shortcut_descr"> : enter edit mode</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌘⇧P</kbd></span><span class="shortcut_descr"> : open the command palette</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⇧↩</kbd></span><span class="shortcut_descr"> : run cell, select below</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌘↩</kbd></span><span class="shortcut_descr"> : run selected cells</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌥↩</kbd></span><span class="shortcut_descr"> : run cell and insert below</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌘⇧↩</kbd></span><span class="shortcut_descr"> : run all cells</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌘1</kbd></span><span class="shortcut_descr"> : change cell to code</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌘2</kbd></span><span class="shortcut_descr"> : change cell to markdown</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌘3</kbd></span><span class="shortcut_descr"> : change cell to raw</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>1</kbd></span><span class="shortcut_descr"> : change cell to heading 1</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>2</kbd></span><span class="shortcut_descr"> : change cell to heading 2</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>3</kbd></span><span class="shortcut_descr"> : change cell to heading 3</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>4</kbd></span><span class="shortcut_descr"> : change cell to heading 4</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>5</kbd></span><span class="shortcut_descr"> : change cell to heading 5</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>6</kbd></span><span class="shortcut_descr"> : change cell to heading 6</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃K</kbd></span><span class="shortcut_descr"> : select cell above</span></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>K</kbd></span><span class="shortcut_descr"> : select cell above</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃J</kbd></span><span class="shortcut_descr"> : select cell below</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>J</kbd></span><span class="shortcut_descr"> : select cell below</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃⇧K</kbd></span><span class="shortcut_descr"> : extend selected cells above</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⇧K</kbd></span><span class="shortcut_descr"> : extend selected cells above</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃⇧J</kbd></span><span class="shortcut_descr"> : extend selected cells below</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⇧J</kbd></span><span class="shortcut_descr"> : extend selected cells below</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>Minus</kbd></span><span class="shortcut_descr"> : split cell at cursor</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>Subtract</kbd></span><span class="shortcut_descr"> : split cell at cursor</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⇧O</kbd></span><span class="shortcut_descr"> : insert cell above</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>O</kbd></span><span class="shortcut_descr"> : insert cell below</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>D</kbd>,<kbd>D</kbd></span><span class="shortcut_descr"> : cut selected cells</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>Y</kbd>,<kbd>Y</kbd></span><span class="shortcut_descr"> : copy selected cells</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⇧P</kbd></span><span class="shortcut_descr"> : paste cells above</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>P</kbd></span><span class="shortcut_descr"> : paste cells below</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>U</kbd></span><span class="shortcut_descr"> : undo cell deletion</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⇧M</kbd></span><span class="shortcut_descr"> : merge selected cells, or current cell with cell below if only one cell is selected</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌘S</kbd></span><span class="shortcut_descr"> : Save and Checkpoint</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⇧L</kbd></span><span class="shortcut_descr"> : toggle line numbers</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⇧V</kbd></span><span class="shortcut_descr"> : toggle output of selected cells</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>Z</kbd>,<kbd>A</kbd></span><span class="shortcut_descr"> : toggle output of selected cells</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⇧S</kbd></span><span class="shortcut_descr"> : toggle output scrolling of selected cells</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>F1</kbd></span><span class="shortcut_descr"> : show keyboard shortcuts</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⇧H</kbd></span><span class="shortcut_descr"> : show keyboard shortcuts</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>0</kbd>,<kbd>0</kbd></span><span class="shortcut_descr"> : restart the kernel (with dialog)</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>Esc</kbd></span><span class="shortcut_descr"> : close the pager</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>Q</kbd></span><span class="shortcut_descr"> : close the pager</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⇧R</kbd></span><span class="shortcut_descr"> : Rename the current notebook</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>Z</kbd>,<kbd>⇧A</kbd></span><span class="shortcut_descr"> : Toggle the hidden state of all output areas</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>Z</kbd>,<kbd>T</kbd></span><span class="shortcut_descr"> : Scroll the current cell to the top</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>Z</kbd>,<kbd>Z</kbd></span><span class="shortcut_descr"> : Scroll the current cell to the center</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Vim Command Mode (press <kbd>i</kbd> to enable)</h4>
+                            <div class="container-fluid">
+                                <div class="col-md-6">
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃N</kbd></span><span class="shortcut_descr"> : code completion forward</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃P</kbd></span><span class="shortcut_descr"> : code completion backward</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃G</kbd></span><span class="shortcut_descr"> : tooltip</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>&gt;&gt;</kbd></span><span class="shortcut_descr"> : indent</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>&lt;&lt;</kbd></span><span class="shortcut_descr"> : dedent</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>GgVG</kbd></span><span class="shortcut_descr"> : select all</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>U</kbd></span><span class="shortcut_descr"> : undo</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃R</kbd></span><span class="shortcut_descr"> : redo</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌘↑</kbd></span><span class="shortcut_descr"> : go to cell start</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌘↓</kbd></span><span class="shortcut_descr"> : go to cell end</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌥←</kbd></span><span class="shortcut_descr"> : go one word left</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌥→</kbd></span><span class="shortcut_descr"> : go one word right</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌥⌫</kbd></span><span class="shortcut_descr"> : delete word before</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌥⌦</kbd></span><span class="shortcut_descr"> : delete word after</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌥↩</kbd></span><span class="shortcut_descr"> : run cell, insert below</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃E</kbd></span><span class="shortcut_descr"> : scroll down</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃J</kbd></span><span class="shortcut_descr"> : run cell, select below</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃K</kbd></span><span class="shortcut_descr"> : run cell, select above</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>/</kbd></span><span class="shortcut_descr"> : find and replace</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>G</kbd>,<kbd>G</kbd></span><span class="shortcut_descr"> : select the first cell</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>⇧G</kbd></span><span class="shortcut_descr"> : select the last cell</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>Z</kbd>,<kbd>M</kbd></span><span class="shortcut_descr"> : collapse output</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>Z</kbd>,<kbd>R</kbd></span><span class="shortcut_descr"> : expand output</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>Z</kbd>,<kbd>⇧A</kbd></span><span class="shortcut_descr"> : Toggle the hidden state of all output areas</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>Z</kbd>,<kbd>⇧M</kbd></span><span class="shortcut_descr"> : collapse all output</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>Z</kbd>,<kbd>⇧R</kbd></span><span class="shortcut_descr"> : expand all output</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>Z</kbd>,<kbd>T</kbd></span><span class="shortcut_descr"> : Scroll the current cell to the top</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>Z</kbd>,<kbd>Z</kbd></span><span class="shortcut_descr"> : Scroll the current cell to the center</span></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃⇧D</kbd></span><span class="shortcut_descr"> : scroll notebook down</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃⇧J</kbd></span><span class="shortcut_descr"> : extend selected cells below</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃⇧K</kbd></span><span class="shortcut_descr"> : extend selected cells above</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃⇧U</kbd></span><span class="shortcut_descr"> : scroll notebook up</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃Y</kbd></span><span class="shortcut_descr"> : scroll up</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌘↩</kbd></span><span class="shortcut_descr"> : run selected cells</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌘⇧↩</kbd></span><span class="shortcut_descr"> : run all cells</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⇧↩</kbd></span><span class="shortcut_descr"> : run cell, select below</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌘⇧P</kbd></span><span class="shortcut_descr"> : open the command palette</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌘1</kbd></span><span class="shortcut_descr"> : change cell to code</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌘2</kbd></span><span class="shortcut_descr"> : change cell to markdown</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌘3</kbd></span><span class="shortcut_descr"> : change cell to raw</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>Minus</kbd></span><span class="shortcut_descr"> : split cell at cursor</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>Subtract</kbd></span><span class="shortcut_descr"> : split cell at cursor</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>⇧O</kbd></span><span class="shortcut_descr"> : insert cell above</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>O</kbd></span><span class="shortcut_descr"> : insert cell below</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>D</kbd>,<kbd>D</kbd></span><span class="shortcut_descr"> : cut selected cells</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>Y</kbd>,<kbd>Y</kbd></span><span class="shortcut_descr"> : copy selected cells</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>⇧P</kbd></span><span class="shortcut_descr"> : paste cells above</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>P</kbd></span><span class="shortcut_descr"> : paste cells below</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>U</kbd></span><span class="shortcut_descr"> : undo cell deletion</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>⇧M</kbd></span><span class="shortcut_descr"> : merge selected cells, or current cell with cell below if only one cell is selected</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>⇧L</kbd></span><span class="shortcut_descr"> : toggle line numbers</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>⇧V</kbd></span><span class="shortcut_descr"> : toggle output of selected cells</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>Z</kbd>,<kbd>A</kbd></span><span class="shortcut_descr"> : toggle output of selected cells</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>⇧S</kbd></span><span class="shortcut_descr"> : toggle output scrolling of selected cells</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>⇧H</kbd></span><span class="shortcut_descr"> : show keyboard shortcuts</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>F1</kbd></span><span class="shortcut_descr"> : show keyboard shortcuts</span></div>
+                                    <div class="quickhelp"><span class="shortcut_key"><kbd>⌃O</kbd>,<kbd>⌃C</kbd></span><span class="shortcut_descr"> : interrupt the kernel</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-default btn-sm" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
